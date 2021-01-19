@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ruslan Mirsaitov](https://up.htmlacademy.ru/htmlcss/30/user/364905).
-* Наставник: `Неизвестно`.
+* Наставник: `[Виктор Кан](https://htmlacademy.ru/profile/viktorkan)`.
 
 ---
 
