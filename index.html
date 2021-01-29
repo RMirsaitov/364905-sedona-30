@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <a src="#">
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a src="#" class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип" />
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -22,8 +23,8 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
+    <main class="container">
+      <section class="block-welcome">
         <!--Фоновое изображение будет добавлено позже-->
         <img
           src="img/welcome.svg"
@@ -32,19 +33,22 @@
           alt="Добро пожаловать в Седону!"
         />
       </section>
-      <header>
+      <header class="features-desc">
         <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </header>
-      <section>
-        <div>
-          <div>
-            <h2>Настоящий<br />городок</h2>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+      <section class="main-features">
+        <div class="feature-item">
+          <div class="feature-left">
+            <h2 class="feature-header">Настоящий<br />городок</h2>
+            <p class="feature-text">— №1 —</p>
+            <p class="feature-text">
+              Седона - не аттракцион для туристов, там течёт своя жизнь
+            </p>
           </div>
-          <div>
+          <div class="feature-right">
             <img
+              class="feature-image"
               src="img/real-town.jpg"
               width="800"
               height="256"
@@ -52,64 +56,85 @@
             />
           </div>
         </div>
-        <div>
-          <ul>
-            <li>
-              <b>Жилье</b>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li>
-              <b>Еда</b>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li>
-              <b>Сувениры</b>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div>
+      </section>
+      <section class="add-features">
+        <ul class="add-features-list">
+          <li class="add-feature-item">
+            <h2 class="feature-header">Жилье</h2>
+            <p class="feature-text">
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+          </li>
+          <li class="add-feature-item">
+            <h2 class="feature-header">Еда</h2>
+            <p class="feature-text">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
+          </li>
+          <li class="add-feature-item">
+            <h2 class="feature-header">Сувениры</h2>
+            <p class="feature-text">
+              Не только китайского, но и местного производства!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-features">
+        <div class="feature-item">
+          <div class="feature-left">
             <img
+              class="feature-image"
               src="img/devil's-bridge.jpg"
               width="800"
               height="256"
               alt="Вид на мост"
             />
           </div>
-          <div>
-            <h2>Там есть<br />Мост дьявола</h2>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div>
-            <h3>Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-          </div>
-          <div>
-            <h3>Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
+          <div class="feature-right">
+            <h2 class="feature-header">Там есть<br />Мост дьявола</h2>
+            <p class="feature-text">— №2 —</p>
+            <p class="feature-text">
+              Да, по нему можно пройти! Если конечно вы осмелитесь
+            </p>
           </div>
         </div>
       </section>
-      <section>
+      <section class="add-features">
+        <ul class="add-features-list">
+          <li class="add-feature-item">
+            <h2 class="feature-header">Небольшая площадь</h2>
+            <p class="feature-text">— №3 —</p>
+            <p class="feature-text">
+              Все достопримечательности находятся очень близко
+            </p>
+          </li>
+          <li class="add-feature-item">
+            <h2 class="feature-header">Красивая дорога</h2>
+            <p class="feature-text">— №4 —</p>
+            <p class="feature-text">
+              Ехать в седону из лас-вегаса совсем не скучно!
+            </p>
+          </li>
+          <li class="add-feature-item">
+            <h2 class="feature-header">Мало туристов</h2>
+            <p class="feature-text">— №5 —</p>
+            <p class="feature-text">
+              Большинство едет в гранд каньон и толпится там
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map-section">
         <div>
-          <b>Заинтересовались?</b>
-          <p>
+          <b class="map-header">Заинтересовались?</b>
+          <!--Как думаешь, тут правильно называть классом header элемент, который не является заголовком?-->
+          <p class="map-text">
             Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
             предложения гостиниц в седоне
           </p>
         </div>
-        <div>
+        <div class="map-image">
           <!--Карта будет добавлена позже с помощью iframe-->
           <img
             src="https://via.placeholder.com/1200x473"
@@ -117,23 +142,59 @@
           />
         </div>
       </section>
+      <!--
+        Форма появится в будущем
+
+      <section class="form">
+        <h3 class="form-header">Поиск гостиниц в Седоне</h3>
+        <label
+          >Дата заезда:
+          <input type="date" />
+        </label>
+        <button>Иконка календаря</button>
+        <br />
+        <label
+          >Дата выезда:
+          <input type="date" />
+        </label>
+        <button>Иконка календаря</button>
+        <br />
+        <label
+          >Взрослые:
+          <input type="number" />
+        </label>
+        <button>-</button>
+        <button>+</button>
+        <br />
+        <label
+          >Дети:
+          <input type="number" />
+        </label>
+        <button>-</button>
+        <button>+</button>
+        <br />
+        <button>Найти</button>
+      </section>
+
+      -->
     </main>
-    <footer>
-      <div>
+    <footer class="footer">
+      <div class="contacts">
         <span>#visitsedona</span>
         <p>ТЕЛ: +7(495) 666-01-66</p>
       </div>
-      <div>
-        <ul>
+      <div class="social">
+        <ul class="social-links">
           <!--Скачал изображения иконок в формате SVG, изображения будут добавлены позже с помощью CSS-->
-          <li><a href="#">Ссылка на Twitter</a></li>
-          <li><a href="#">Ссылка на Facebook</a></li>
-          <li><a href="#">Ссылка на YouTube</a></li>
+          <li class="social-link"><a href="#">Ссылка на Twitter</a></li>
+          <li class="social-link"><a href="#">Ссылка на Facebook</a></li>
+          <li class="social-link"><a href="#">Ссылка на YouTube</a></li>
         </ul>
       </div>
-      <div>
-        <span>Website by</span>
+      <div class="academy-link">
+        <span class="academy-text">Website by</span>
         <img
+          class="academy-logo"
           src="img/logo-htmlacademy.svg"
           width="115"
           height="41"
