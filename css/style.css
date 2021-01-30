@@ -1,0 +1,315 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --light-black: #333333;
+  --black-brown: #231F20;
+  --light-blue: #81B3D2;
+  --blue-gray: #669EC0;
+  --dark-blue-gray: #5496BD;
+  --light-gray: #eeeeee;
+  --dark-blond: #766357;
+  --brown: #604E43;
+  --dark-brown: #503E33;
+  --smoky-white: #F2F2F2;
+  --dull-gray: #666666;
+  --basic-white: #ffffff;
+  --white-aluminum: #ABABAB;
+  --white-gray: #A9A9A9;
+  --pale-blue: #CACACA;
+  --platinum: #E5E5E5;
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  background-color: var(--basic-white);
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  color: var(--basic-black);
+}
+
+.main-header-logo {}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-navigation a:hover {
+  color: var(--light-blue);
+}
+
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.active a {
+  color: var(--dark-blond);
+}
+
+/* Features-Desc */
+
+.features-desc h1 {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  align-items: center;
+}
+
+.features-desc p {
+  font-size: 14px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main-features */
+
+.feature-info {
+  background-color: var(--light-blue);
+  width: 400px;
+  height: 256px;
+}
+
+.feature-title {
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-text {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Add-features */
+
+.add-features-list {
+  list-style: none;
+}
+
+.add-feature-title {
+  font-size: 21px;
+  line-height: 21px;
+  color: (--basic-black);
+  align-items: center;
+  text-align: center;
+}
+
+.add-feature-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: (--light-black);
+  align-items: center;
+  text-align: center;
+}
+
+.bottom-features {
+  width: 1200px;
+  height: 256px;
+  background-color: var(--light-gray);
+}
+
+/* Map-section */
+
+.map-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.map-info {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Catalog page */
+
+/*options */
+
+.options {
+  background: url(../img/catalog-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.option-title {
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.options-list {
+  list-style: none;
+}
+
+.option-type {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.option-price-start, .option-price-end {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.price-button {
+  width: 137px;
+  height: 36px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  background-color: Transparent;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+/* Sort */
+
+.sort-title {
+  color: (--basic-black);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-text {
+  color: (--basic-black);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-type {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-list li:nth-of-type(2) a, .sort-list li:nth-of-type(3) a {
+  color: (--basic-black);
+  opacity: 0.3;
+  text-decoration-style: dotted;
+}
+
+.sort-list li:first-of-type a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+
+.sort-list li:nth-of-type(4) a, .sort-list li:nth-of-type(5) a {
+  color: (--basic-black);
+  opacity: 0.3;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+/* Catalog-list */
+
+/* Вот тут ↓ не могу никак изменить цвет текста. Пробовал и к ссылке задать стили, но ничего не выходит. Почему так? */
+
+.item-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: (--basic-black);
+}
+
+.item-link {
+  text-decoration: none;
+}
+
+.item-type, .item-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+}
+
+/* Вот тут ↓ возникли сомнения, лучше делать как ссылку или как кнопку?*/
+
+.item-details {
+  display: inline-block;
+  color: var(--basic-white);
+  width: 110px;
+  height: 27px;
+  text-decoration: none;
+  background-color: var(--light-blue);
+  text-align: center;
+}
+
+.item-booking {
+  display: inline-block;
+  color: var(--basic-white);
+  width: 142px;
+  height: 27px;
+  text-decoration: none;
+  background-color: var(--dark-blond);
+  text-align: center;
+}
+
+.item-rating-text {
+  display: inline-block;
+  color: var(--dull-gray);
+  font-size: 14px;
+  line-height: 21px;
+  width: 110px;
+  height: 27px;
+  background-color: var(--smoky-white);
+  text-align: center;
+}
+
+/* Footer */
+
+.contacts {
+  font-size: 21px;
+  line-height: 26px;
+  color: (--basic-black);
+  font-weight: bold;
+}
+
+.by-academy {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: (--basic-black);
+}
