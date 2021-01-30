@@ -3,85 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
+        <!--Вот здесь ↓ указал, что при нажатии на логотип, должна открываться главная страница,
+          но почему-то при нажатии ничего не происходит. Что сделал не так?-->
         <a src="index.html" class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип" />
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
+          <li><a href="index.html">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="active"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <section class="heading-options">
+      <section class="options">
         <form class="options-form" action="#">
           <div class="options">
-            <fieldset class="options-left">
-              <legend class="options-heading">Инфраструктура:</legend>
+            <fieldset class="options-checkbox">
+              <legend class="option-title">Инфраструктура:</legend>
               <ul class="options-list">
-                <li class="option">
+                <li class="option-type">
                   <input type="checkbox" checked />
                   <label for="">Бассейн</label>
                 </li>
-                <li class="option">
+                <li class="option-type">
                   <input type="checkbox" />
                   <label for="">Парковка</label>
                 </li>
-                <li class="option">
+                <li class="option-type">
                   <input type="checkbox" />
                   <label for="">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="options-right">
-              <legend class="options-heading">Тип жилья:</legend>
-              <ul class="option-list">
-                <li class="option">
+            <fieldset class="option-parameters-checkbox">
+              <legend class="option-title">Тип жилья:</legend>
+              <ul class="options-list">
+                <li class="option-type">
                   <input type="checkbox" checked />
                   <label for="">Гостиница</label>
                 </li>
-                <li class="option">
+                <li class="option-type">
                   <input type="checkbox" checked />
                   <label for="">Мотель</label>
                 </li>
-                <li class="option">
+                <li class="option-type">
                   <input type="checkbox" checked />
                   <label for="">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="form-price">
-            <h3 class="form-heading">Стоимость в сутки (Р):</h3>
-            <label class="form-start-price" for="#">
+          <div class="price">
+            <h3 class="option-title">Стоимость в сутки (Р):</h3>
+            <label class="option-price-start" for="#">
               От<input type="text" placeholder="От 0" />
             </label>
-            <label class="form-end-price" for="#">
+            <label class="option-price-end" for="#">
               До<input type="text" placeholder="До 3000" />
             </label>
             <br />
-            <label class="form-range-price" for="#">
+            <label class="option-price-range" for="#">
               <input type="range" />
             </label>
-            <button class="button-result">Показать</button>
+            <button class="price-button">Показать</button>
           </div>
         </form>
       </section>
       <section class="catalog">
         <div class="sort">
           <div class="sort-result">
-            <b class="sort-heading">Найдено: 3</b>
+            <b class="sort-title">Найдено: 3</b>
           </div>
           <div class="sort-options">
             <p class="sort-text">Сортировка:</p>
@@ -117,7 +125,7 @@
               />
             </div>
             <div class="item-info">
-              <h2 class="item-heading">
+              <h2 class="item-title">
                 <a class="item-link" href="#">Amara Resort & Spa</a>
               </h2>
               <p class="item-type">Гостиница</p>
@@ -141,14 +149,18 @@
                 alt="Desert Quail Inn"
               />
             </div>
-            <div class="item-info">
-              <h2 class="item-heading">
-                <a class="item-link" href="#">Desert Quail Inn</a>
-              </h2>
-              <p class="item-type">Мотель</p>
-              <p class="item-price">От 3000 Р.</p>
-              <a class="item-details" href="#">Подробнее</a>
-              <a class="item-booking" href="#">Забронировать</a>
+            <div class="item-card">
+              <div class="item-info">
+                <h2 class="item-title">
+                  <a class="item-link" href="#">Desert Quail Inn</a>
+                </h2>
+                <p class="item-type">Мотель</p>
+                <p class="item-price">От 3000 Р.</p>
+              </div>
+              <div class="item-buttons">
+                <a class="item-details" href="#">Подробнее</a>
+                <a class="item-booking" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="item-rating">
               <img class="item-rating-stars" src="#" alt="Рейтинг" />
@@ -166,7 +178,7 @@
               />
             </div>
             <div class="item-info">
-              <h2 class="item-heading">
+              <h2 class="item-title">
                 <a class="item-link" href="#">Villas at Poco Diablo</a>
               </h2>
               <p class="item-type">Апартаменты</p>
