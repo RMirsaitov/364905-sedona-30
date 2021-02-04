@@ -18,17 +18,19 @@
   <body class="page-body">
     <div class="wrapper">
       <header class="main-header">
-        <nav class="main-navigation">
-          <a href="#" class="main-header-logo">
-            <img src="img/logo.svg" width="138" height="70" alt="Логотип" />
-          </a>
-          <ul class="site-navigation">
-            <li class="active"><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
-          </ul>
-        </nav>
+        <div class="inner">
+          <nav class="main-navigation">
+            <a href="#" class="main-header-logo">
+              <img src="img/logo.svg" width="138" height="70" alt="Логотип" />
+            </a>
+            <ul class="site-navigation">
+              <li class="active"><a href="#">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li><a href="catalog.html">Гостиницы</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main class="container">
         <section class="welcome">
@@ -41,11 +43,15 @@
           />
         </section>
         <header class="features-desc">
-          <h1>
-            Седона — небольшой городок в Аризоне,<br />
-            заслуживающий большего!
-          </h1>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <div class="inner">
+            <h1>
+              Седона — небольшой городок в Аризоне,<br />
+              заслуживающий большего!
+            </h1>
+            <p>
+              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            </p>
+          </div>
         </header>
         <section class="main-features-top">
           <div class="feature-info">
@@ -66,47 +72,49 @@
           </div>
         </section>
         <section class="add-features">
-          <ul class="add-features-list">
-            <li class="add-feature-item">
-              <img
-                class="add-feature-icon"
-                src="img/icon-1.svg"
-                alt="Жилье"
-                height="72"
-                width="75"
-              />
-              <h2 class="add-feature-title">Жилье</h2>
-              <p class="add-feature-text">
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </p>
-            </li>
-            <li class="add-feature-item">
-              <img
-                class="add-feature-icon"
-                src="img/icon-2.svg"
-                alt="Еда"
-                height="70"
-                width="75"
-              />
-              <h2 class="add-feature-title">Еда</h2>
-              <p class="add-feature-text">
-                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-              </p>
-            </li>
-            <li class="add-feature-item">
-              <img
-                class="add-feature-icon"
-                src="img/icon-3.svg"
-                alt="Сувенир"
-                height="77"
-                width="64"
-              />
-              <h2 class="add-feature-title">Сувениры</h2>
-              <p class="add-feature-text">
-                Не только китайского, но и местного производства!
-              </p>
-            </li>
-          </ul>
+          <div class="inner">
+            <ul class="add-features-list">
+              <li class="add-feature-item">
+                <img
+                  class="add-feature-icon"
+                  src="img/icon-1.svg"
+                  alt="Жилье"
+                  height="72"
+                  width="75"
+                />
+                <h2 class="add-feature-title">Жилье</h2>
+                <p class="add-feature-text">
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="add-feature-item">
+                <img
+                  class="add-feature-icon"
+                  src="img/icon-2.svg"
+                  alt="Еда"
+                  height="70"
+                  width="75"
+                />
+                <h2 class="add-feature-title">Еда</h2>
+                <p class="add-feature-text">
+                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
+              </li>
+              <li class="add-feature-item">
+                <img
+                  class="add-feature-icon"
+                  src="img/icon-3.svg"
+                  alt="Сувенир"
+                  height="77"
+                  width="64"
+                />
+                <h2 class="add-feature-title">Сувениры</h2>
+                <p class="add-feature-text">
+                  Не только китайского, но и местного производства!
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="main-features-bottom">
           <div class="feature-image">
@@ -127,29 +135,31 @@
           </div>
         </section>
         <section class="add-features bottom-features">
-          <ul class="add-features-list">
-            <li class="add-feature-item">
-              <h2 class="add-feature-title">Небольшая площадь</h2>
-              <p class="add-feature-text">— №3 —</p>
-              <p class="add-feature-text">
-                Все достопримечательности находятся очень близко
-              </p>
-            </li>
-            <li class="add-feature-item">
-              <h2 class="add-feature-title">Красивая дорога</h2>
-              <p class="add-feature-text">— №4 —</p>
-              <p class="add-feature-text">
-                Ехать в седону из лас-вегаса совсем не скучно!
-              </p>
-            </li>
-            <li class="add-feature-item">
-              <h2 class="add-feature-title">Мало туристов</h2>
-              <p class="add-feature-text">— №5 —</p>
-              <p class="add-feature-text">
-                Большинство едет в гранд каньон и толпится там
-              </p>
-            </li>
-          </ul>
+          <div class="inner">
+            <ul class="add-features-list">
+              <li class="add-feature-item">
+                <h2 class="add-feature-title">Небольшая площадь</h2>
+                <p class="add-feature-text">— №3 —</p>
+                <p class="add-feature-text">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </li>
+              <li class="add-feature-item">
+                <h2 class="add-feature-title">Красивая дорога</h2>
+                <p class="add-feature-text">— №4 —</p>
+                <p class="add-feature-text">
+                  Ехать в седону из лас-вегаса совсем не скучно!
+                </p>
+              </li>
+              <li class="add-feature-item">
+                <h2 class="add-feature-title">Мало туристов</h2>
+                <p class="add-feature-text">— №5 —</p>
+                <p class="add-feature-text">
+                  Большинство едет в гранд каньон и толпится там
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="interested">
@@ -170,9 +180,7 @@
           </div>
         </section>
 
-        <!-- Форма появится в будущем
-        
-      <section class="modal">
+        <!-- <section class="modal">
         <h2 class="modal-header">Поиск гостиниц в Седоне</h2>
         <label
           >Дата заезда:
@@ -201,9 +209,8 @@
         <button>+</button>
         <br />
         <button class="button-search">Найти</button>
-      </section>
-    
-      --></main>
+      </section> -->
+      </main>
       <footer class="page-footer">
         <div class="contacts">
           <span>#visitsedona</span>
