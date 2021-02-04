@@ -25,7 +25,6 @@
 /* Global */
 
 .page-body {
-  min-width: 1280px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -53,9 +52,15 @@ img {
   background-color: var(--basic-white);
   min-width: 1200px;
   margin: 0 auto;
+  padding: 0 40px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+}
+
+.inner {
+  display: grid;
+  padding: 0 73px;
 }
 
 /* Main navigation */
@@ -70,12 +75,9 @@ img {
   justify-self: center;
 }
 
-.main-navigation-wrapper {
-  display: grid;
-}
-
 .site-navigation {
   list-style: none;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -140,7 +142,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 256px;
-  width: 1200px;
 }
 
 .feature-info {
@@ -170,12 +171,10 @@ img {
 /* Add-features */
 
 .add-features-list {
-  width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 330px;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -206,7 +205,6 @@ img {
   height: 256px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 1200px;
 }
 
 /* Interested */
@@ -240,6 +238,12 @@ img {
   background-repeat: no-repeat;
 }
 
+.options-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+}
+
 .option-title {
   color: var(--basic-white);
   font-weight: bold;
@@ -248,6 +252,7 @@ img {
 }
 
 .options-list {
+  padding: 0;
   list-style: none;
 }
 
@@ -283,6 +288,13 @@ img {
 
 /* Sort */
 
+.sort-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  border-bottom: 1px solid var(--platinum);
+}
+
 .sort-title {
   color: var(--basic-black);
   font-weight: bold;
@@ -297,6 +309,7 @@ img {
 }
 
 .sort-list {
+  padding: 0;
   list-style: none;
 }
 
@@ -333,7 +346,20 @@ img {
   text-decoration: none;
 }
 
-/* Catalog-list */
+/* Catalog */
+
+.catalog {
+  display: grid;
+}
+
+.catalog-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  border-bottom: 1px solid var(--platinum);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .item-title a {
   font-weight: bold;
@@ -414,6 +440,8 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* Contacts */
+
 .contacts {
   justify-self: center;
   font-size: 21px;
@@ -422,12 +450,15 @@ img {
   font-weight: bold;
 }
 
+/* Social */
+
 .social {
   justify-self: center;
 }
 
 .social-list {
   list-style: none;
+  padding: 0;
 }
 
 .social-link {
@@ -444,6 +475,8 @@ img {
 .social-link:active {
   background-color: var(--dark-blue-gray);
 }
+
+/* Academy-link */
 
 .academy-link {
   justify-self: center;
