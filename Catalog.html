@@ -18,56 +18,60 @@
   <body class="page-body">
     <div class="wrapper">
       <header class="main-header">
-        <nav class="main-navigation">
-          <a href="index.html" class="main-header-logo">
-            <img src="img/logo.svg" width="138" height="70" alt="Логотип" />
-          </a>
-          <ul class="site-navigation">
-            <li><a href="index.html">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li class="active"><a href="#">Гостиницы</a></li>
-          </ul>
-        </nav>
+        <div class="inner">
+          <nav class="main-navigation">
+            <a href="index.html" class="main-header-logo">
+              <img src="img/logo.svg" width="138" height="70" alt="Логотип" />
+            </a>
+            <ul class="site-navigation">
+              <li><a href="index.html">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li class="active"><a href="#">Гостиницы</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <main class="container">
+      <main class="catalog-page">
         <section class="options">
           <form class="options-form" action="#">
-            <div class="options">
-              <fieldset class="options-checkbox">
-                <legend class="option-title">Инфраструктура:</legend>
-                <ul class="options-list">
-                  <li class="option-type">
-                    <input type="checkbox" name="option" checked />
-                    <label for="">Бассейн</label>
-                  </li>
-                  <li class="option-type">
-                    <input type="checkbox" name="option" />
-                    <label for="">Парковка</label>
-                  </li>
-                  <li class="option-type">
-                    <input type="checkbox" name="option" />
-                    <label for="">Wi-Fi</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="option-parameters-checkbox">
-                <legend class="option-title">Тип жилья:</legend>
-                <ul class="options-list">
-                  <li class="option-type">
-                    <input type="checkbox" name="option" checked />
-                    <label for="">Гостиница</label>
-                  </li>
-                  <li class="option-type">
-                    <input type="checkbox" name="option" checked />
-                    <label for="">Мотель</label>
-                  </li>
-                  <li class="option-type">
-                    <input type="checkbox" name="option" checked />
-                    <label for="">Апартаменты</label>
-                  </li>
-                </ul>
-              </fieldset>
+            <div class="options-columns">
+              <div class="inner">
+                <div class="options-column">
+                  <p class="option-title">Инфраструктура:</p>
+                  <ul class="options-list">
+                    <li class="option-type">
+                      <input type="checkbox" name="option" checked />
+                      <label for="">Бассейн</label>
+                    </li>
+                    <li class="option-type">
+                      <input type="checkbox" name="option" />
+                      <label for="">Парковка</label>
+                    </li>
+                    <li class="option-type">
+                      <input type="checkbox" name="option" />
+                      <label for="">Wi-Fi</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="option-column">
+                  <p class="option-title">Тип жилья:</p>
+                  <ul class="options-list">
+                    <li class="option-type">
+                      <input type="checkbox" name="option" checked />
+                      <label for="">Гостиница</label>
+                    </li>
+                    <li class="option-type">
+                      <input type="checkbox" name="option" checked />
+                      <label for="">Мотель</label>
+                    </li>
+                    <li class="option-type">
+                      <input type="checkbox" name="option" checked />
+                      <label for="">Апартаменты</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="price">
               <h3 class="option-title">Стоимость в сутки (Р):</h3>
@@ -85,74 +89,83 @@
             </div>
           </form>
         </section>
-        <section class="catalog">
-          <div class="sort">
-            <div class="sort-result">
-              <b class="sort-title">Найдено: 3</b>
-            </div>
-            <div class="sort-options">
-              <p class="sort-text">Сортировка:</p>
-              <ul class="sort-list">
-                <li>
-                  <a class="sort-type sort-type-checked" href="#">По цене</a>
-                </li>
-                <li>
-                  <a class="sort-type" href="#">По типу</a>
-                </li>
-                <li>
-                  <a class="sort-type" href="#">По рейтингу</a>
-                </li>
-                <li>
-                  <button class="sort-up" href="#">
-                    <svg
-                      width="11"
-                      height="10"
-                      viewBox="0 0 11 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sort-down" href="#">
-                    <svg
-                      width="11"
-                      height="10"
-                      viewBox="0 0 11 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M5.5 10L0 0H11" fill="#81B3D2" />
-                    </svg>
-                  </button>
-                </li>
-              </ul>
+
+        <section class="sort">
+          <div class="inner">
+            <div class="sort-row">
+              <div class="sort-column">
+                <b class="sort-title">Найдено: 3</b>
+                <p class="sort-text">Сортировка:</p>
+                <ul class="sort-list">
+                  <li>
+                    <a class="sort-type sort-type-checked" href="#">По цене</a>
+                  </li>
+                  <li>
+                    <a class="sort-type" href="#">По типу</a>
+                  </li>
+                  <li>
+                    <a class="sort-type" href="#">По рейтингу</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="sort-column">
+                <ul class="sort-list">
+                  <li>
+                    <button class="sort-up" href="#">
+                      <svg
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sort-down" href="#">
+                      <svg
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M5.5 10L0 0H11" fill="#81B3D2" />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="catalog-list">
-            <div class="catalog-item">
-              <div class="item-image">
-                <img
-                  src="img/hotel-1.jpg"
-                  width="135"
-                  height="90"
-                  alt="Amara Resort & Spa"
-                />
-              </div>
-              <div class="item-info">
-                <h2 class="item-title">
-                  <a href="#">Amara Resort & Spa</a>
-                </h2>
-                <p class="item-type">Гостиница</p>
-                <p class="item-price">От 4000 Р.</p>
-                <div>
-                  <a class="item-details" href="#">Подробнее</a>
-                  <a class="item-booking" href="#">Забронировать</a>
+        </section>
+        <section class="catalog">
+          <div class="inner">
+            <div class="catalog-row">
+              <div class="catalog-item">
+                <div class="item-image">
+                  <img
+                    src="img/hotel-1.jpg"
+                    width="135"
+                    height="90"
+                    alt="Amara Resort & Spa"
+                  />
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">
+                    <a href="#">Amara Resort & Spa</a>
+                  </h2>
+                  <p class="item-type">Гостиница</p>
+                  <p class="item-price">От 4000 Р.</p>
+                  <div>
+                    <a class="item-details" href="#">Подробнее</a>
+                    <a class="item-booking" href="#">Забронировать</a>
+                  </div>
                 </div>
               </div>
-              <div class="item-rating">
+              <div class="catalog-rating">
                 <svg
                   width="19"
                   height="17"
@@ -206,29 +219,31 @@
               </div>
             </div>
 
-            <div class="catalog-item">
-              <div class="item-image">
-                <img
-                  src="img/hotel-2.jpg"
-                  width="135"
-                  height="90"
-                  alt="Desert Quail Inn"
-                />
-              </div>
-              <div class="item-card">
-                <div class="item-info">
-                  <h2 class="item-title">
-                    <a href="#">Desert Quail Inn</a>
-                  </h2>
-                  <p class="item-type">Мотель</p>
-                  <p class="item-price">От 3000 Р.</p>
+            <div class="catalog-row">
+              <div class="catalog-item">
+                <div class="item-image">
+                  <img
+                    src="img/hotel-2.jpg"
+                    width="135"
+                    height="90"
+                    alt="Desert Quail Inn"
+                  />
                 </div>
-                <div class="item-buttons">
-                  <a class="item-details" href="#">Подробнее</a>
-                  <a class="item-booking" href="#">Забронировать</a>
+                <div class="item-card">
+                  <div class="item-info">
+                    <h2 class="item-title">
+                      <a href="#">Desert Quail Inn</a>
+                    </h2>
+                    <p class="item-type">Мотель</p>
+                    <p class="item-price">От 3000 Р.</p>
+                  </div>
+                  <div class="item-buttons">
+                    <a class="item-details" href="#">Подробнее</a>
+                    <a class="item-booking" href="#">Забронировать</a>
+                  </div>
                 </div>
               </div>
-              <div class="item-rating">
+              <div class="catalog-rating">
                 <svg
                   width="19"
                   height="17"
@@ -268,23 +283,26 @@
                 <p class="item-rating-text">Рейтинг: 8,9</p>
               </div>
             </div>
-            <div class="catalog-item">
-              <div class="item-image">
-                <img
-                  src="img/hotel-3.jpg"
-                  width="135"
-                  height="90"
-                  alt="Villas at Poco Diablo"
-                />
-              </div>
-              <div class="item-info">
-                <h2 class="item-title">
-                  <a href="#">Villas at Poco Diablo</a>
-                </h2>
-                <p class="item-type">Апартаменты</p>
-                <p class="item-price">От 2000 Р.</p>
-                <a class="item-details" href="#">Подробнее</a>
-                <a class="item-booking" href="#">Забронировать</a>
+
+            <div class="catalog-row">
+              <div class="catalog-item">
+                <div class="item-image">
+                  <img
+                    src="img/hotel-3.jpg"
+                    width="135"
+                    height="90"
+                    alt="Villas at Poco Diablo"
+                  />
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">
+                    <a href="#">Villas at Poco Diablo</a>
+                  </h2>
+                  <p class="item-type">Апартаменты</p>
+                  <p class="item-price">От 2000 Р.</p>
+                  <a class="item-details" href="#">Подробнее</a>
+                  <a class="item-booking" href="#">Забронировать</a>
+                </div>
               </div>
               <div class="item-rating">
                 <svg
