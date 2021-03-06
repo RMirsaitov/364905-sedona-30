@@ -8,18 +8,22 @@
   --blue-gray: #669EC0;
   --dark-blue-gray: #5496BD;
   --white-gray: #BDBBBC;
-  --light-gray: #eeeeee;
+  --light-gray: #EEEEEE;
+  --smoky-white-gray: #EBEBEB;
   --dark-blond: #766357;
   --brown: #604E43;
   --dark-brown: #503E33;
   --smoky-white: #F2F2F2;
   --dull-gray: #666666;
-  --basic-white: #ffffff;
+  --basic-white: #FFFFFF;
   --white-aluminum: #ABABAB;
-  --white-gray: #A9A9A9;
+  --dark-white-gray: #A9A9A9;
   --pale-blue: #CACACA;
   --platinum: #E5E5E5;
+  --transparent-black: rgba(0, 0, 0, 0.3);
   --transparent-white: rgba(255, 255, 255, 0.3);
+  --transparent-dark-white: rgba(255, 255, 255, 0.9);
+  --transparent-gray-white: rgba(0, 1, 1, 0.15);
 }
 
 /* global */
@@ -59,6 +63,7 @@ img {
 }
 
 .wrapper {
+  position: relative;
   background-color: var(--basic-white);
   width: 1200px;
   margin: 0 auto;
@@ -314,14 +319,14 @@ img {
   padding: 50px 49px 51px;
 }
 
-/* entering__data */
+/* search */
 
-.entering__data {
-  padding: 58px 382px 120px;
+.search {
+  position: relative;
+  padding: 58px 382px 102px;
 }
 
-.entering__data__title {
-  margin: 0;
+.search__title {
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -330,16 +335,203 @@ img {
   margin-bottom: 20px;
 }
 
-.entering__data__info {
+.search__text {
   text-align: center;
   font-size: 14px;
   line-height: 24px;
+}
+
+/* modal */
+
+.modal {
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  margin-left: -284px;
+  width: 568px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px var(--transparent-gray-white);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  padding: 55px;
+}
+
+.modal__button {
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  cursor: pointer;
+}
+
+.button__search-hotels {
+  width: 568px;
+  height: 86px;
+  background-color: var(--dark-blond);
+}
+
+.button__search-hotels:hover {
+  background-color: var(--brown);
+}
+
+.button__search-hotels:active {
+  background-color: var(--dark-brown);
+  color: var(--transparent-white);
+}
+
+.button__search {
+  align-self: center;
+  width: 458px;
+  height: 58px;
+  background-color: var(--light-blue);
+}
+
+.button__search:hover {
+  background-color: var(--blue-gray);
+}
+
+.button__search:active {
+  background-color: var(--dark-blue-gray);
+  color: var(--transparent-white);
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+}
+
+.date__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.date__row input {
+  width: 346px;
+  height: 38px;
+  padding-left: 13px;
+  padding-right: 43px;
+  background-color: var(--smoky-white);
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.date__row input:hover {
+  background-color: var(--smoky-white-gray);
+}
+
+.date__row input:focus {
+  background-color: transparent;
+  border: 2px solid var(--platinum);
+}
+
+.date__row label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.date__button {
+  padding: 0;
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  border: none;
+  width: 21px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.date__button:hover path {
+  fill: var(--basic-black);
+}
+
+.date__button:active path {
+  fill: var(--light-blue);
+}
+
+/* quantity */
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.quantity input {
+  width: 38px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  background-color: var(--smoky-white);
+  padding-left: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.quantity label:first-of-type {
+  margin-right: 40px;
+}
+
+.quantity label:last-of-type {
+  margin-right: 25px;
+}
+
+.quantity label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.quantity__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  width: 38px;
+  height: 38px;
+  background-color: var(--smoky-white);
+  cursor: pointer;
+}
+
+.quantity__button:hover rect, .quantity__button:hover path {
+  fill: var(--basic-black)
+}
+
+.quantity__button:active rect, .quantity__button:active path {
+  fill: var(--light-blue)
+}
+
+.quantity button:nth-of-type(2) {
+  margin-right: 53px;
 }
 
 /* map__section */
 
 .map__section {
   height: 594px;
+}
+
+.map__section iframe {
+  border: none;
 }
 
 /* catalog__page */
@@ -554,7 +746,7 @@ img {
 .filter {
   border-bottom: 1px solid var(--platinum);
   display: flex;
-  padding: 29px 73px;
+  padding: 30px 72px;
 }
 
 .filter__result {
@@ -594,34 +786,23 @@ img {
 .filter__type {
   font-size: 12px;
   line-height: 18px;
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: var(--transparent-black);
   text-decoration: none;
   border-bottom: 1px dotted var(--light-blue);
 }
 
 .filter__type:hover {
   color: var(--light-blue);
-  opacity: 1;
 }
 
 .filter__type:active {
   color: var(--basic-black);
-  opacity: 1;
   border-bottom: none;
 }
 
 .filter__type_active {
   border-bottom: none;
-  opacity: 1;
   color: var(--light-blue);
-}
-
-.filter__list li:nth-of-type(4) a, .filter__list li:nth-of-type(5) a {
-  color: var(--basic-black);
-  font-size: 12px;
-  line-height: 18px;
-  text-decoration: none;
 }
 
 .filter__buttons {
@@ -639,7 +820,7 @@ img {
   fill: var(--pale-blue);
 }
 
-.filter__button__active path {
+.filter__button_active path {
   fill: var(--light-blue);
 }
 
@@ -667,6 +848,10 @@ img {
 
 .item__image {
   margin-top: 6.5px;
+}
+
+.item__image img {
+  object-fit: contain;
 }
 
 .item__info {
@@ -787,6 +972,12 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.page__footer--index {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--transparent-dark-white);
+}
+
 /* contacts */
 
 .contacts {
@@ -797,7 +988,6 @@ img {
   padding-left: 120px;
   padding-right: 45px;
   margin: 0 auto;
-  margin: 0;
 }
 
 .contacts p {
