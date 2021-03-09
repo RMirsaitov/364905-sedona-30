@@ -32,7 +32,12 @@
       </header>
       <main class="page__catalog">
         <section class="options">
-          <form class="options__form" action="#">
+          <form
+            class="options__form"
+            method="get"
+            action="https://echo.htmlacademy.ru"
+            target="_blank"
+          >
             <fieldset class="option__fieldset checkbox__column">
               <legend class="option__legend">Инфраструктура:</legend>
               <ul class="option__list">
@@ -130,9 +135,7 @@
                   ></div>
                 </div>
               </div>
-              <button class="price__button" type="submit" name="show-result">
-                Показать
-              </button>
+              <button class="price__button" type="submit">Показать</button>
             </fieldset>
           </form>
         </section>
@@ -186,13 +189,14 @@
           </div>
         </section>
         <section class="catalog">
+          <h2 class="visually-hidden">Список гостиниц</h2>
           <div class="item__row">
             <div class="item__image">
               <img
                 src="img/hotel-1.jpg"
                 width="135"
                 height="90"
-                alt="Amara Resort & Spa"
+                alt="Изображение гостиницы на фоне горы в лучах алого заката и зеленой лужайкой перед ней"
               />
             </div>
             <div class="item__info">
@@ -205,12 +209,14 @@
               </div>
               <div>
                 <a class="item__details" href="#">Подробнее</a>
-                <a class="item__booking" href="#">Забронировать</a>
+                <a class="item__booking" href="#"> Забронировать </a>
               </div>
             </div>
             <div class="item__rating">
               <div class="item__stars">
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -223,6 +229,8 @@
                   />
                 </svg>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -235,6 +243,8 @@
                   />
                 </svg>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -247,6 +257,8 @@
                   />
                 </svg>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -270,7 +282,7 @@
                 src="img/hotel-2.jpg"
                 width="135"
                 height="90"
-                alt="Desert Quail Inn"
+                alt="Изображение мотеля: желтое здание у дороги с вывеской"
               />
             </div>
             <div class="item__info">
@@ -289,6 +301,8 @@
             <div class="item__rating">
               <div class="item__stars">
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -301,6 +315,8 @@
                   />
                 </svg>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -313,6 +329,8 @@
                   />
                 </svg>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -336,7 +354,7 @@
                 src="img/hotel-3.jpg"
                 width="135"
                 height="90"
-                alt="Villas at Poco Diablo"
+                alt="Изображение маленького домика рядом с деревьями на зеленой полянке"
               />
             </div>
             <div class="item__info">
@@ -355,6 +373,8 @@
             <div class="item__rating">
               <div class="item__stars">
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -367,6 +387,8 @@
                   />
                 </svg>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="19"
                   height="17"
                   viewBox="0 0 19 17"
@@ -391,7 +413,10 @@
           <span class="contacts__hashtag">#visitsedona</span>
           <p>
             ТЕЛ:
-            <a class="contacts__phone" href="tel:+74956660166"
+            <a
+              class="contacts__phone"
+              href="tel:+74956660166"
+              aria-label="Номер телефона"
               >+7 (495) 666-01-66</a
             >
           </p>
@@ -399,8 +424,10 @@
         <div class="social">
           <ul class="social__list">
             <li>
-              <a class="social__button" href="#"
+              <a class="social__button" href="#" aria-label="Facebook"
                 ><svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="17"
                   height="16"
                   viewBox="0 0 17 16"
@@ -415,8 +442,10 @@
               </a>
             </li>
             <li>
-              <a class="social__button" href="#"
+              <a class="social__button" href="#" aria-label="Facebook"
                 ><svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="12"
                   height="22"
                   viewBox="0 0 12 22"
@@ -431,8 +460,10 @@
               </a>
             </li>
             <li>
-              <a class="social__button" href="#"
+              <a class="social__button" href="#" aria-label="YouTube"
                 ><svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="20"
                   height="16"
                   viewBox="0 0 20 16"
@@ -451,9 +482,15 @@
           </ul>
         </div>
         <div class="academy__link">
+          <h3 class="visually-hidden">Сайт разработан: HTML-Academy</h3>
           <span class="academy__text">Website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a
+            href="https://htmlacademy.ru/intensive/htmlcss"
+            aria-label="Ссылка на сайт HTML-Academy"
+          >
             <svg
+              aria-hidden="true"
+              focusable="false"
               class="academy__logo"
               width="115"
               height="41"
