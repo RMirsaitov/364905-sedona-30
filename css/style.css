@@ -359,13 +359,23 @@ img {
 /* modal */
 
 .modal {
+  display: none;
   position: absolute;
-  top: 205px;
+  top: 0px;
   left: 50%;
   margin-left: -284px;
   width: 568px;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px var(--transparent-gray-white);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.8s;
+}
+
+.modal-error {
+  animation: shake 0.8s;
 }
 
 .modal__form {
@@ -386,36 +396,42 @@ img {
   cursor: pointer;
 }
 
-.button__search-hotels {
+.search__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -284px;
   width: 568px;
   height: 86px;
   background-color: var(--dark-blond);
 }
 
-.button__search-hotels:hover {
+.search__button:hover {
   background-color: var(--brown);
 }
 
-.button__search-hotels:active {
+.search__button:active {
   background-color: var(--dark-brown);
   color: var(--transparent-white);
 }
 
-.button__search {
+.modal__button-form {
   align-self: center;
   width: 458px;
   height: 58px;
   background-color: var(--light-blue);
 }
 
-.button__search:hover {
+.modal__button-form:hover {
   background-color: var(--blue-gray);
 }
 
-.button__search:active {
+.modal__button-form:active {
   background-color: var(--dark-blue-gray);
   color: var(--transparent-white);
 }
+
+/* date */
 
 .date {
   display: flex;
@@ -542,6 +558,7 @@ img {
 /* map__section */
 
 .map__section {
+  position: relative;
   height: 594px;
 }
 
@@ -1127,4 +1144,33 @@ img {
 
 .academy__logo path:active {
   fill: var(--white-gray);
+}
+
+/* Animation */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100px);
+  }
+  33% {
+    transform: translateY(30px);
+  }
+  66% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
 }
