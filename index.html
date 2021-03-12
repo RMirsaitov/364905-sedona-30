@@ -13,7 +13,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <div class="wrapper">
@@ -150,15 +150,26 @@
             Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
             предложения гостиниц в седоне
           </p>
-          <div class="modal">
-            <h3 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-            <button
-              class="modal__button button__search-hotels"
+          <button
+              class="search__button modal__button"
               type="button"
               aria-label="Открыть форму поиска гостиницы в Седоне"
             >
               Поиск гостиницы в Седоне
-            </button>
+          </button>
+        </section>
+        <section class="map__section">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18516.671179008288!2d-111.76375677789395!3d34.87341195455377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1614891641931!5m2!1sru!2sru"
+            width="1200"
+            height="594"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            title="331 Forest Rd, Sedona, AZ 86336, Соединенные Штаты"
+          ></iframe>
+          <div class="modal">
+            <h3 class="visually-hidden">Поиск гостиницы в Седоне</h2>
             <form
               method="get"
               action="https://echo.htmlacademy.ru"
@@ -166,14 +177,14 @@
               target="_blank"
             >
               <div class="date">
-
                 <div class="date__row">
                   <label for="arrival-date">Дата заезда: </label>
                   <input
+                    class="arrival-date"
                     type="text"
                     placeholder="24 апреля 2017"
                     id="arrival-date"
-                    name="date"
+                    name="arrival-date"
                   />
                   <button
                     class="date__button"
@@ -210,7 +221,8 @@
                     type="text"
                     placeholder="4 июля 2017"
                     id="departure-date"
-                    name="date"
+                    name="departure-date"
+                    class="departure-date"
                   />
                   <button
                     class="date__button"
@@ -243,7 +255,7 @@
                 </div>
               </div>
               <div class="quantity">
-                <label for="adults">Взрослые: </label>
+                <label for="quantity-adults">Взрослые: </label>
                 <button
                   class="quantity__button"
                   type="button"
@@ -264,9 +276,10 @@
                 <input
                   type="text"
                   placeholder="2"
-                  id="adults"
-                  name="quantity"
+                  id="quantity-adults"
+                  name="quantity-adults"
                   min="0"
+                  class="quantity-adults"
                 />
                 <button class="quantity__button" type="button" aria-label="Прибавить количество взрослых">
                   <svg
@@ -286,7 +299,7 @@
                     />
                   </svg>
                 </button>
-                <label for="kids">Дети: </label>
+                <label for="quantity-kids">Дети: </label>
                 <button class="quantity__button" type="button" aria-label="Убавить количество детей">
                   <svg
                   aria-hidden="true"
@@ -303,9 +316,10 @@
                 <input
                   type="text"
                   placeholder="0"
-                  id="kids"
-                  name="quantity"
+                  id="quantity-kids"
+                  name="quantity-kids"
                   min="0"
+                  class="quantity-kids"
                 />
                 <button class="quantity__button" type="button" aria-label="Прибавить количество детей">
                   <svg
@@ -326,22 +340,11 @@
                   </svg>
                 </button>
               </div>
-              <button class="modal__button button__search" type="submit" aria-label="Найти результат">
+              <button class="modal__button modal__button-form" type="submit" aria-label="Найти результат">
                 Найти
               </button>
             </form>
           </div>
-        </section>
-        <section class="map__section">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18516.671179008288!2d-111.76375677789395!3d34.87341195455377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1614891641931!5m2!1sru!2sru"
-            width="1200"
-            height="594"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            title="331 Forest Rd, Sedona, AZ 86336, Соединенные Штаты"
-          ></iframe>
         </section>
       </main>
       <footer class="page__footer page__footer--index">
@@ -439,5 +442,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>
