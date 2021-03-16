@@ -86,6 +86,7 @@
   --dark-white-gray: #A9A9A9;
   --pale-blue: #CACACA;
   --platinum: #E5E5E5;
+  --basic-background-color: #6c859a;
   --transparent-black: rgba(0, 0, 0, 0.3);
   --transparent-white: rgba(255, 255, 255, 0.3);
   --transparent-dark-white: rgba(255, 255, 255, 0.9);
@@ -212,11 +213,11 @@ img {
 .welcome {
   position: relative;
   margin: 0;
+  background-color: var(--basic-background-color);
   background-image: url(../img/background-photo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-align: center;
   padding-top: 75px;
   padding-bottom: 80px
 }
@@ -323,11 +324,11 @@ img {
   color: var(--basic-black)
 }
 
-.other__feature__first h2, .other__feature__second h2, .other__feature__third h2 {
+.other__feature__first h3, .other__feature__second h3, .other__feature__third h3 {
   position: relative
 }
 
-.other__feature__first h2::before, .other__feature__second h2::before, .other__feature__third h2::before {
+.other__feature__first h3::before, .other__feature__second h3::before, .other__feature__third h3::before {
   content: "";
   position: absolute;
   bottom: 50px;
@@ -338,12 +339,12 @@ img {
   background-image: url(../img/housing.svg)
 }
 
-.other__feature__second h2::before, .other__feature__third h2::before {
+.other__feature__second h3::before, .other__feature__third h3::before {
   height: 70px;
   background-image: url(../img/food.svg)
 }
 
-.other__feature__third h2::before {
+.other__feature__third h3::before {
   width: 64px;
   height: 77px;
   margin-left: -32px;
@@ -404,7 +405,6 @@ img {
 }
 
 .modal {
-  display: none;
   position: absolute;
   top: 0;
   left: 50%;
@@ -413,6 +413,10 @@ img {
   background-color: var(--basic-white);
   -webkit-box-shadow: 0 7px 15px var(--transparent-gray-white);
   box-shadow: 0 7px 15px var(--transparent-gray-white)
+}
+
+.modal-close {
+  display: none
 }
 
 .modal-show {
@@ -437,17 +441,14 @@ img {
   padding: 55px
 }
 
-.date__row input, .modal__button {
-  border: 0;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase
-}
-
 .modal__button {
   padding: 0;
+  border: 0;
+  font-weight: 700;
   font-size: 21px;
+  line-height: 26px;
   text-align: center;
+  text-transform: uppercase;
   color: var(--basic-white);
   cursor: pointer
 }
@@ -513,14 +514,21 @@ img {
   position: relative
 }
 
+.date__row input, .date__row label, .quantity label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black)
+}
+
 .date__row input {
   width: 346px;
   height: 38px;
   padding-left: 13px;
   padding-right: 43px;
   background-color: var(--smoky-white);
-  font-size: 14px;
-  color: var(--basic-black)
+  text-transform: uppercase;
+  border: 2px solid transparent
 }
 
 .date__row input:hover {
@@ -529,14 +537,13 @@ img {
 
 .date__row input:focus {
   background-color: transparent;
-  border: 2px solid var(--platinum)
+  outline: 0;
+  border-color: var(--platinum)
 }
 
-.date__row label, .quantity label {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--basic-black)
+.date__button, .quantity input {
+  background-color: transparent;
+  border: 0
 }
 
 .date__button {
@@ -544,7 +551,6 @@ img {
   position: absolute;
   top: 7px;
   right: 9px;
-  border: 0;
   width: 21px;
   height: 23px;
   cursor: pointer
@@ -571,8 +577,6 @@ img {
 .quantity input {
   width: 38px;
   height: 38px;
-  background-color: transparent;
-  border: 0;
   background-color: var(--smoky-white);
   padding-left: 15px;
   font-weight: 700;
@@ -629,6 +633,7 @@ img {
 }
 
 .options {
+  background-color: var(--basic-background-color);
   background: url(../img/catalog-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -763,13 +768,13 @@ img {
 
 .range__controls .toggle {
   position: absolute;
-  top: -7px;
-  width: 4px;
-  height: 4px;
+  top: -9px;
+  width: 2px;
+  height: 2px;
   background-color: var(--white-aluminum);
   border-radius: 50%;
   cursor: pointer;
-  border: 6.5px solid var(--basic-white);
+  border: 8.5px solid var(--basic-white);
   -webkit-box-shadow: 0 2px 0 0 var(--white-aluminum);
   box-shadow: 0 2px 0 0 var(--white-aluminum);
   -webkit-box-sizing: content-box;
@@ -904,7 +909,7 @@ img {
 }
 
 .filter__sort .filter__list li:not(:last-child) {
-  margin-right: 32px
+  margin-right: 34px
 }
 
 .filter__type {
@@ -972,14 +977,15 @@ img {
 }
 
 .item__row {
-  border-bottom: 1px solid var(--platinum);
-  padding: 23px 73px 26px;
+  padding: 25px 73px 30px;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--platinum)
 }
 
 .item__image {
-  margin-top: 7px;
+  height: 90px;
+  margin-top: 5px;
   margin-right: 28px
 }
 
@@ -995,17 +1001,21 @@ img {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
 }
 
 .item__title {
-  margin: 0 0 8px
+  margin: 0
 }
 
 .item__title a {
+  margin: 0;
   font-weight: 700;
   font-size: 21px;
-  line-height: 19px;
+  line-height: 21px;
   color: var(--basic-black);
   text-decoration: none
 }
@@ -1093,8 +1103,7 @@ img {
 }
 
 .item__stars {
-  text-align: right;
-  margin-top: 7.5px
+  text-align: right
 }
 
 .item__score {
