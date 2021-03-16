@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>HTML Academy: Седона</title>
+    <title>HTML&nbsp;Academy: Седона</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -24,7 +24,7 @@
           </a>
           <ul class="menu__navigation">
             <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Фото и&nbsp;видео</a></li>
             <li><a href="#">Карта штата</a></li>
             <li class="active"><a href="#">Гостиницы</a></li>
           </ul>
@@ -32,6 +32,7 @@
       </header>
       <main class="page__catalog">
         <section class="options">
+          <h2 class="visually-hidden">Выбор опций и&nbsp;стоимости жилья</h2>
           <form
             class="options__form"
             method="get"
@@ -107,7 +108,9 @@
               </ul>
             </fieldset>
             <fieldset class="option__fieldset price__column">
-              <legend class="option__legend">Стоимость в сутки (Р):</legend>
+              <legend class="option__legend">
+                Стоимость в&nbsp;сутки (Р):
+              </legend>
               <div class="price__range">
                 <div class="price__controls">
                   <label class="price__label" for="min-price">
@@ -117,7 +120,6 @@
                       id="min-price"
                       name="min-price"
                       value="0"
-                      min="0"
                     />
                   </label>
                   <label class="price__label" for="max-price">
@@ -134,18 +136,20 @@
                   <div class="scale">
                     <div class="bar" style="width: 80%; margin-left: 0"></div>
                   </div>
-                  <div
-                    class="toggle toggle__min"
-                    tabindex="0"
-                    style="left: 0%"
-                    aria-label="Выбрать минимальную стоимость"
-                  ></div>
+                  <div class="toggle toggle__min" tabindex="0" style="left: 0%">
+                    <span class="visually-hidden"
+                      >Выбрать минимальную стоимость</span
+                    >
+                  </div>
                   <div
                     class="toggle toggle__max"
                     tabindex="0"
                     style="left: 80%"
-                    aria-label="Выбрать максимальную стоимость"
-                  ></div>
+                  >
+                    <span class="visually-hidden"
+                      >Выбрать максимальную стоимость</span
+                    >
+                  </div>
                 </div>
               </div>
               <button class="price__button" type="submit">Показать</button>
@@ -153,6 +157,7 @@
           </form>
         </section>
         <section class="filter">
+          <h2 class="visually-hidden">Фильтр для поиска жилья</h2>
           <div class="filter__result">
             <span>Найдено: 3</span>
           </div>
@@ -160,13 +165,15 @@
             <span>Сортировка:</span>
             <ul class="filter__list">
               <li>
-                <a class="filter__type filter__type_active" href="#">По цене</a>
+                <a class="filter__type filter__type_active" href="#"
+                  >По&nbsp;цене</a
+                >
               </li>
               <li>
-                <a class="filter__type" href="#">По типу</a>
+                <a class="filter__type" href="#">По&nbsp;типу</a>
               </li>
               <li>
-                <a class="filter__type" href="#">По рейтингу</a>
+                <a class="filter__type" href="#">По&nbsp;рейтингу</a>
               </li>
             </ul>
           </div>
@@ -202,7 +209,7 @@
           </div>
         </section>
         <section class="catalog">
-          <h2 class="visually-hidden">Список гостиниц</h2>
+          <h2 class="visually-hidden">Каталог гостиниц</h2>
           <div class="item__row">
             <div class="item__image">
               <img
@@ -213,16 +220,16 @@
               />
             </div>
             <div class="item__info">
-              <h2 class="item__title">
-                <a href="#">Amara Resort & Spa</a>
-              </h2>
+              <h3 class="item__title">
+                <a href="#">Amara Resort &amp;&nbsp;Spa</a>
+              </h3>
               <div class="item__columns">
                 <div class="item__type-details">
                   <span class="item__type">Гостиница</span>
                   <a class="item__details" href="#">Подробнее</a>
                 </div>
                 <div class="item__price-booking">
-                  <span class="item__price">От 4000 Р.</span>
+                  <span class="item__price">От&nbsp;4000&nbsp;Р.</span>
                   <a class="item__booking" href="#">Забронировать</a>
                 </div>
               </div>
@@ -301,16 +308,16 @@
               />
             </div>
             <div class="item__info">
-              <h2 class="item__title">
+              <h3 class="item__title">
                 <a href="#">Desert Quail Inn</a>
-              </h2>
+              </h3>
               <div class="item__columns">
                 <div class="item__type-details">
                   <span class="item__type">Мотель</span>
                   <a class="item__details" href="#">Подробнее</a>
                 </div>
                 <div class="item__price-booking">
-                  <span class="item__price">От 3000 Р.</span>
+                  <span class="item__price">От&nbsp;3000&nbsp;Р.</span>
                   <a class="item__booking" href="#">Забронировать</a>
                 </div>
               </div>
@@ -375,16 +382,16 @@
               />
             </div>
             <div class="item__info">
-              <h2 class="item__title">
-                <a href="#">Villas at Poco Diablo</a>
-              </h2>
+              <h3 class="item__title">
+                <a href="#">Villas at&nbsp;Poco Diablo</a>
+              </h3>
               <div class="item__columns">
                 <div class="item__type-details">
                   <span class="item__type">Апартаменты</span>
                   <a class="item__details" href="#">Подробнее</a>
                 </div>
                 <div class="item__price-booking">
-                  <span class="item__price">От 2000 Р.</span>
+                  <span class="item__price">От&nbsp;2000&nbsp;Р.</span>
                   <a class="item__booking" href="#">Забронировать</a>
                 </div>
               </div>
