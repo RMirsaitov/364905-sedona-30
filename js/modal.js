@@ -6,6 +6,8 @@ const modalQuantityAdults = document.querySelector(".quantity-adults");
 const modalQuantityKids = document.querySelector(".quantity-kids");
 const modalForm = document.querySelector(".modal__form");
 
+modal.classList.add("modal-close");
+
 let isStorageSupport = true;
 let storageAdults = "";
 let storageKids = "";
@@ -36,8 +38,8 @@ modalForm.addEventListener("submit", function (event) {
   if (
     !modalArrivalDate.value ||
     !modalDepartureDate.value ||
-    !modalQuantityAdults ||
-    !modalQuantityKids
+    !modalQuantityAdults.value ||
+    !modalQuantityKids.value
   ) {
     event.preventDefault();
     modal.classList.remove("modal-error");
