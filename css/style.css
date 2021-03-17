@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* variables */
 
 :root {
@@ -1089,6 +1096,7 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 27px;
+  vertical-align: middle;
   color: var(--basic-white);
   width: 110px;
   height: 27px;
@@ -1111,6 +1119,7 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 27px;
+  vertical-align: middle;
   color: var(--basic-white);
   width: 142px;
   height: 27px;

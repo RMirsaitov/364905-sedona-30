@@ -1059,6 +1059,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 27px;
+  vertical-align: middle;
   color: var(--basic-white);
   width: 110px;
   height: 27px;
